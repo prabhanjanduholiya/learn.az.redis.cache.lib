@@ -39,7 +39,7 @@ namespace learn.az.redis.cache.api.Controllers
             {
                 employees = _databaseRepository.GetAllEmployees();
 
-                await _textCacheManager.Set("all", JsonSerializer.Serialize(employees));
+                await _textCacheManager.SetAsync("all", JsonSerializer.Serialize(employees));
             }
             else
             {

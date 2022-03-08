@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace learn.az.redis.cache.lib.Interfaces
 {
-    public interface ITextCacheManager
+    interface ISetCacheManager
     {
-        Task<bool> SetAsync(string key, string value);
-
-        Task<string> GetAsync(string key);
     }
 }

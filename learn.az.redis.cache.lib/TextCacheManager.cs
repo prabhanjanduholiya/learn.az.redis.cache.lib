@@ -17,7 +17,7 @@ namespace learn.az.redis.cache.lib
             _redis = connectionMultiplexer;
         }
 
-        public async Task<bool> Set(string key, string value)
+        public async Task<bool> SetAsync(string key, string value)
         {
             var db = _redis.GetDatabase();
 
@@ -34,7 +34,5 @@ namespace learn.az.redis.cache.lib
 
             return await Task.FromResult(result);
         }
-
-
     }
 }
