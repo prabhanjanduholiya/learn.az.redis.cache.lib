@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "learn.az.redis.cache.lib", "learn.az.redis.cache.lib\learn.az.redis.cache.lib.csproj", "{0538572C-E3A7-4F4D-B415-E19B3DE81035}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "learn.az.redis.cache.lib", "learn.az.redis.cache.lib\learn.az.redis.cache.lib.csproj", "{0538572C-E3A7-4F4D-B415-E19B3DE81035}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "learn.az.redis.cache.api", "learn.az.redis.cache.api\learn.az.redis.cache.api.csproj", "{074BF927-0FDF-4361-8F98-66450B2B6CC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "learn.az.redis.cache.api", "learn.az.redis.cache.api\learn.az.redis.cache.api.csproj", "{074BF927-0FDF-4361-8F98-66450B2B6CC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "redis.cache", "redis.cache", "{346921EA-C724-4A46-8EC1-BBFFD568A5C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +26,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0538572C-E3A7-4F4D-B415-E19B3DE81035} = {346921EA-C724-4A46-8EC1-BBFFD568A5C7}
+		{074BF927-0FDF-4361-8F98-66450B2B6CC3} = {346921EA-C724-4A46-8EC1-BBFFD568A5C7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {44A1EBB2-158B-46C5-AD13-0B55C0D851CE}
