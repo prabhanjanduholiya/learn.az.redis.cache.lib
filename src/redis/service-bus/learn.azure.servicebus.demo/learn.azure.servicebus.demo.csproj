@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\learn.azure.servicebus.reciever\learn.azure.servicebus.reciever.csproj" />
+    <ProjectReference Include="..\learn.azure.servicebus.sender\learn.azure.servicebus.sender.csproj" />
+  </ItemGroup>
+
+</Project>

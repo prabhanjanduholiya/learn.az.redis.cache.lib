@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace learn.azure.servicebus.reciever.Queues
 {
-    internal class QueueReciever
+    internal class TopicMessageReciever : IDisposable
     {
         private readonly ServiceBusClient _client;
 
@@ -17,13 +17,18 @@ namespace learn.azure.servicebus.reciever.Queues
         /// 
         /// </summary>
         /// <param name="connectionString"></param>
-        /// <param name="queueName"></param>
-        public QueueReciever(string connectionString, string queueName)
+        /// <param name="topicName"></param>
+        public TopicMessageReciever(string connectionString, string topicName, string subscriptionName)
         {
             _client = new ServiceBusClient(connectionString);
-            _processor = _client.CreateProcessor(queueName);
+            _processor = _client.CreateProcessor(topicName, subscriptionName);
             _processor.ProcessMessageAsync += _processor_ProcessMessageAsync;
             _processor.ProcessErrorAsync += _processor_ProcessErrorAsync;
+        }
+
+        public void Dispose()
+        {
+            throw new NotImplementedException();
         }
 
         private Task _processor_ProcessErrorAsync(ProcessErrorEventArgs arg)

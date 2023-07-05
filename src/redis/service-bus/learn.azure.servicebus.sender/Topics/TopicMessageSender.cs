@@ -5,27 +5,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace learn.azure.servicebus.sender.Queues
+namespace learn.azure.servicebus.sender.Topics
 {
-    internal class QueueSender : IDisposable
+    internal class TopicMessageSender : IDisposable
     {
-        IQueueClient _queueClient;
+        ITopicClient _topicClient;
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="connectionString"></param>
-        /// <param name="queueName"></param>
-        public QueueSender(string connectionString, string queueName)
+        /// <param name="topicName"></param>
+        public TopicMessageSender(string connectionString, string topicName)
         {
-            _queueClient = new QueueClient(connectionString, queueName);
+            _topicClient = new TopicClient(connectionString, topicName);
         }
 
         public async void Dispose()
         {
-            if (_queueClient != null && !_queueClient.IsClosedOrClosing)
+            if (_topicClient != null && !_topicClient.IsClosedOrClosing)
             {
-                await _queueClient.CloseAsync();
+                await _topicClient.CloseAsync();
             }
         }
 
@@ -33,7 +33,7 @@ namespace learn.azure.servicebus.sender.Queues
         {
             Message servicebusMessage = new Message(Encoding.UTF8.GetBytes(message));
 
-            await _queueClient.SendAsync(servicebusMessage);
+            await _topicClient.SendAsync(servicebusMessage);
         }
     }
 }
