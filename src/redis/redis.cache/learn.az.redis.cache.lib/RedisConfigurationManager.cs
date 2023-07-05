@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace learn.az.redis.cache.lib
 {
     /// <summary>
-    /// 
+    /// Config manager 
     /// </summary>
     public class RedisConfigurationManager
     {
