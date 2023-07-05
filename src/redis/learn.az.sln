@@ -15,9 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "learn.az.key.vault.demo.api
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "service-bus", "service-bus", "{D54699C2-F81F-425F-8F8B-6B01DE64CB55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "learn.azure.servicebus.sender", "service-bus\learn.azure.servicebus.sender\learn.azure.servicebus.sender.csproj", "{F4507FDB-0317-4BD3-AFC2-67008D3F9D1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "learn.azure.servicebus.sender", "service-bus\learn.azure.servicebus.sender\learn.azure.servicebus.sender.csproj", "{F4507FDB-0317-4BD3-AFC2-67008D3F9D1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "learn.azure.servicebus.reciever", "service-bus\learn.azure.servicebus.reciever\learn.azure.servicebus.reciever.csproj", "{19C6B8C7-19DD-41DB-A341-5B8D6C4B0570}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "learn.azure.servicebus.reciever", "service-bus\learn.azure.servicebus.reciever\learn.azure.servicebus.reciever.csproj", "{19C6B8C7-19DD-41DB-A341-5B8D6C4B0570}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "learn.azure.servicebus.demo", "service-bus\learn.azure.servicebus.demo\learn.azure.servicebus.demo.csproj", "{803DC2A4-A46D-4144-95F1-9310D28291C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{19C6B8C7-19DD-41DB-A341-5B8D6C4B0570}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19C6B8C7-19DD-41DB-A341-5B8D6C4B0570}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19C6B8C7-19DD-41DB-A341-5B8D6C4B0570}.Release|Any CPU.Build.0 = Release|Any CPU
+		{803DC2A4-A46D-4144-95F1-9310D28291C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{803DC2A4-A46D-4144-95F1-9310D28291C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{803DC2A4-A46D-4144-95F1-9310D28291C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{803DC2A4-A46D-4144-95F1-9310D28291C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{B43478A3-2638-443B-9AE0-F72A71D92CE0} = {16E20E83-963A-4675-831A-5552D9DFD741}
 		{F4507FDB-0317-4BD3-AFC2-67008D3F9D1F} = {D54699C2-F81F-425F-8F8B-6B01DE64CB55}
 		{19C6B8C7-19DD-41DB-A341-5B8D6C4B0570} = {D54699C2-F81F-425F-8F8B-6B01DE64CB55}
+		{803DC2A4-A46D-4144-95F1-9310D28291C9} = {D54699C2-F81F-425F-8F8B-6B01DE64CB55}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {44A1EBB2-158B-46C5-AD13-0B55C0D851CE}
