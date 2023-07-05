@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace learn.az.redis.cache.lib
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class RedisConfigurationManager
     {
         public static void AddRedis(IServiceCollection services, string connectionString)
